@@ -1,0 +1,766 @@
+:root {
+    --card-color-4c2b1d: #4C2B1D;
+    --card-color-85744a: #85744A;
+    --font-gold-color-e4ca7f: #E4CA7F;
+    --main-color-281815: #281815;
+    --btn-mobile-color-00b359: #00B359;
+    --red-color-cc4343: #CC4343;
+    --blue-color-3b99fc: #3B99FC;
+    --card-color-cc9544: #CC9544;
+    --lighter-grey-color-707070: #707070;
+    --grey-color-414141: #414141;
+    --font-white-color-ffffff: #FFFFFF;
+    --bg-color-black: #000000;
+
+    --font-Poppins: 'Poppins', sans-serif;
+    --font-Montserrat: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color-black);
+    max-width: 1920px;
+    min-width: fit-content;
+    width: 100%;
+    color: var(--font-white-color-ffffff);
+    font-family: var(--font-Poppins)
+    
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header {
+    background: var(--font-white-color-ffffff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar  {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    color: var(--bg-color-black);
+}
+
+.lista__navbar, .lista__perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+}
+
+.lista__navbar {
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.lista__perfil a {
+    display: flex;
+    gap: 5px;
+}
+
+.home__logo {
+    padding-left: 5%;
+}
+
+.hero .navbar-hero {
+    background-color: var(--bg-color-black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.hero {
+    background-image: url(./img/latas-background.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+    min-width: fit-content;
+    margin-top: 99px;
+
+    height: 80vh;
+    width: 100%;
+
+}
+
+.navbar-hero img {
+    padding-left: 10%;
+}
+
+.navbar-hero a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+    color: var(--font-white-color-ffffff);
+}
+
+
+
+.btn__assinar {
+    all: unset;
+
+    background-color: var(--font-gold-color-e4ca7f);
+    
+    text-align: center;
+    padding: 10px 40px;
+    margin-right: 100px;
+    width: 300px;
+
+   
+    border-radius: 2px;
+
+    cursor: pointer;
+    
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+      -o-transform: skew(-10deg);
+         transform: skew(-10deg);
+}
+
+.btn__mobile {
+    all: unset;
+
+    background-color: var(--bg-color-black);
+    color: var(--btn-mobile-color-00b359);
+    opacity: 0.7;
+
+    padding: 15px 30px;
+
+    margin-top: 32px;
+    margin-left: 88%;
+
+    border: var(--btn-mobile-color-00b359) solid 2px;
+    border-radius: 20px 20px 20px 20px;
+
+    cursor: pointer;
+
+}
+
+.cover-content {
+    color: var(--font-white-color-ffffff);
+    font-size: 40px;
+
+    width: 668px;
+    margin-top: 120px;
+    margin-left: 140px;
+    margin-bottom: 21px;
+}
+
+.cover-content strong {
+    font-family: var(--font-Montserrat);
+}
+
+.btn__grande {
+    all: unset;
+
+    background: var(--font-gold-color-e4ca7f);
+    text-align: center;
+    width: 420px;
+    height: 71px;
+
+    margin-left: 140px;
+
+    color: #000000;
+    
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.btn__grande:hover {
+    color: var(--font-white-color-ffffff);
+}
+
+
+.titulo h1 {
+    color: var(--font-gold-color-e4ca7f);
+
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+    margin-bottom: 115px;
+}
+
+
+.beneficios {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    width: 100%;
+
+}
+
+.beneficios-container{
+    background-image: url(./img/flecha-bg.png);
+    background-size: contain;
+    background-repeat: round;
+    width: 90%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.box-beneficios {
+    background-color: rgba(41, 41, 41, .9);
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 1154px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.beneficios-content {
+    display: flex;
+
+}
+
+.beneficios-texto {
+    width: 60%;
+
+    padding: 20px;
+}
+
+.lata__supercoffee {
+    margin-top: -50px;
+    margin-left: -40px;
+}
+
+.lata__caneca {
+    margin-left: 10px;
+    width: 40%;
+    height: 425px;
+    padding-left: 0;
+}
+
+.mulher__xicara {
+    margin-left: -7%;
+    margin-bottom: -8%;
+    margin-right: 0;
+
+}
+
+.beneficios-texto, .beneficios-texto_exp {
+    width: 60%;
+    padding: 40px;
+}
+
+.beneficios h2 {
+    color: var(--card-color-cc9544);
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.beneficios p {
+    width: 530px;
+    font-size: 24px;
+}
+
+.experiencias {
+    text-align: right;
+}
+
+.beneficios-texto_exp {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20%;
+    border-top: solid 2px var(--card-color-cc9544);
+    border-bottom: solid 2px var(--card-color-cc9544);
+    height: 280px;
+
+}
+.beneficios-texto_exp p{
+    width: 516px;
+}
+
+.beneficios-texto_exp h2 {
+    text-align: right;
+}
+
+.funcionamento {
+    margin-bottom: 100px;
+}
+
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+}
+
+.card-box_funcionamento {
+    justify-content: space-evenly;
+}
+
+.card-box > span {
+    display: flex;
+
+    color: var(--font-gold-color-e4ca7f);
+    background-color: #000000;
+    
+    align-items: center;
+    position: absolute;
+    
+    font-size: 118px;
+    width: 118px;
+    height: 200px;
+
+}
+
+.personalizacao,
+.pagamento,
+.entrega {
+    display: inline-block;
+    border: solid  3px var(--font-gold-color-e4ca7f);
+    border-radius: 50%;
+
+    padding: 80px;
+    height: 300px;
+    width: 300px;
+}
+
+.card-box > div > img {
+    width: 49px;
+    height: 52px;
+    margin-bottom: 15px;
+    
+}
+
+
+
+.plano__01 {
+    margin-left: -85%;
+}
+
+.plano__02 {
+    margin-left: -25%;
+
+}
+
+.plano__03 {
+    margin-left: 35%;
+}
+
+
+.card-box__plano {
+    margin-bottom: 74px;
+}
+
+
+
+.personalizacao,
+.pagamento,
+.entrega > p {
+    width: 295px;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.planos {
+    background-image: url(/img/planos-bg.png);
+    background-size: cover;
+
+    display: flex;
+
+    height: 877px;
+
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Fim section funcionamento */
+
+.planos h1 {
+    margin-top: 60px;
+    margin-bottom: 31px;
+    color: var(--font-white-color-ffffff);
+    font-size: 40px;
+}
+
+.planos > span {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    height: 250px;
+    width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.card_mensal {
+    border: solid 1px var(--font-white-color-ffffff);
+
+}
+
+.card_trimestral {
+    border: solid 1px var(--card-color-85744a);
+}
+
+.card_semestral {
+    border: solid 1px var(--card-color-cc9544);
+}
+
+
+.card-box > div > span {
+    text-align: center;
+}
+
+
+.card_mensal,
+.card_trimestral,
+.card_semestral {
+    justify-content: flex-start;
+    width: 450px;
+    height: 563px;
+}
+
+
+.frete-span {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.frete-span_1 {
+    
+    background-color: var(--font-white-color-ffffff);
+    color: var(--bg-color-black);
+}
+
+.frete-span_2 {
+    background-color: var(--card-color-85744a);
+}
+
+.frete-span_3 {
+    background-color: var(--card-color-cc9544);
+    
+}
+.conteudo-planos {
+    display: flex;
+    padding: 40px 48px;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.conteudo-planos h2 {
+    margin-bottom: 21px;
+}
+
+.conteudo-planos strong {
+    font-size: 42px;
+}
+
+.conteudo-planos span {
+    font-weight: bold;
+}
+
+.card button {
+    all: unset;
+
+    text-align: center;
+    
+    width: 355px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    border: 2px solid var(--card-color-cc9544);
+
+    color: var(--card-color-cc9544);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.conteudo-planos_top {
+    width: 70%;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid var(--font-white-color-ffffff);
+}
+
+.conteudo-planos_top img {
+    margin-left: 5px;
+}
+
+.conteudo-planos_bottom {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    height: 18%;
+    align-items: flex-start;
+
+    font-size: 20px;
+}
+
+
+/* section seu plano */
+
+.seu-plano {
+    margin-bottom: 100px;
+}
+
+.container-planos {
+    background-color: #414141;
+    opacity: 0.7;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    padding: 70px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.escolha-sabores {
+    width: 45%;
+    border-right: 2px solid var(--card-color-cc9544);
+
+}
+
+.escolha-planos {
+    width: 45%;
+    padding-left: 20px;
+}
+
+.escolha-sabores h3,
+.escolha-planos h3 {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+
+
+.input-planos {
+    padding: 40px 0px 40px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-planos_5 {
+    border-bottom: 2px solid var(--card-color-cc9544);
+}
+
+.input-planos_10 {
+    border-bottom: 2px solid var(--card-color-cc9544);
+}
+
+.btn__grande__assinar {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* section faq */
+
+.faq {
+    margin-bottom: 300px;
+}
+
+.item-faq {
+    width: 60%;
+    margin: auto;
+    padding: 0 1.5rem;
+}
+
+
+.pergunta {
+    background-color: var(--font-white-color-ffffff);
+    font-weight: bold;
+
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    padding-left: 30px;
+
+    border-radius: 3px;
+    margin-bottom: 3px;
+
+    cursor: pointer;
+}
+
+.pergunta:hover{
+    background-color: var(--grey-color-414141);
+}
+
+/* .pergunta p:hover {
+    color: var(--card-color-cc9544);
+
+}
+ */
+
+.pergunta p,
+.pergunta ion-icon {
+    color: var(--bg-color-black)
+}
+
+.resposta {
+    background-color: #000000;
+    border: 2px solid white;
+    padding: 15px 25px;
+
+    margin-bottom: 20px;
+    border-radius: 3px;
+
+     display: none;
+
+     transition: display 1.4 ease;
+}
+
+.faq-seta-down {
+    display: none;
+}
+
+.item-faq.active .resposta {
+    display: block;
+    
+}
+
+.item-faq.active .faq-seta-down {
+    display: block;
+}
+
+.item-faq.active .faq-seta-foward {
+    display: none;
+}
+
+/* Fim do FAQ */
+
+.footer {
+    background-color: #414141;
+
+    width: 100%;
+}
+
+.footer-main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    margin-bottom: 100px;
+
+}
+
+.footer-main-content > div {
+    width: 40%;
+}
+
+.footer-main-content h3 {
+    margin-bottom: 20px;
+}
+
+
+.footer-main-content input {
+    padding: 10px 10px;
+
+    
+}
+
+.footer-main-content button {
+    all: unset;
+
+    text-align: center;
+    
+
+    padding: 7px;
+
+    background-color: var(--card-color-cc9544);
+    color: #000000;
+
+    text-transform: uppercase;
+    
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.card-footer_newsletter {
+    margin-left: 90px;
+}
+
+
+.footer-content-bottom {
+    padding: 20px 100px;
+
+    border-top: 1px solid #FFFFFF;
+}
+
+.footer-content-bottom ul li a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.footer-content-bottom > ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-redes {
+    display: flex;
+    padding: 20px;
+    
+}
+
+.footer-redes > ion-icon {
+    padding: 10px;
+}
